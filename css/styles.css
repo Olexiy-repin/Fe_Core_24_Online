@@ -1,0 +1,235 @@
+:root {
+  --main-font: "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --title-dark-theme-color: #ffffff;
+  --title-light-theme-color: #303030;
+  --modal-btn-dark-theme-color: #ffffff;
+  --modal-btn-light-theme-color: #303030;
+  --text-dark-theme-color: #9da4bd;
+  --text-light-theme-color: #555555;
+  --accent-color: #ff6c00;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: var(--main-font);
+  font-size: 18px;
+  color: var(--text-light-theme-color);
+  list-style: none;
+}
+
+.address {
+  font-style: normal;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* HEADER */
+.navigation-list-link,
+.header-tel-link,
+.modal-btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  /* color: #ffffff; */
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.header-tel-link:hover,
+.header-tel-link:focus {
+  color: var(--accent-color);
+}
+
+.header-tel-link {
+  text-transform: uppercase;
+}
+
+.modal-btn {
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+/* HERO SECTION */
+.social-links-item-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--text-light-theme-color);
+}
+
+.social-links-item-link:hover,
+.social-links-item-link:focus {
+  color: var(--accent-color);
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dark-theme-color);
+}
+
+.hero-title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  color: var(--title-dark-theme-color);
+}
+
+.description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--text-dark-theme-color);
+}
+
+/* ABOUT US */
+.about-us .subtitle {
+  color: var(--text-light-theme-color);
+}
+
+.title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--title-light-theme-color);
+}
+
+.about-us .description {
+  color: var(--text-light-theme-color);
+}
+
+.about-us .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--text-light-theme-color);
+}
+
+.about-us .modal-btn {
+  color: var(--modal-btn-light-theme-color);
+}
+
+/* SERVICES */
+.services-list-item-name,
+.services-list-item-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--text-dark-theme-color);
+}
+
+/* WHY ARE WE */
+.why-are-we .subtitle {
+  color: var(--text-light-theme-color);
+}
+
+.why-are-we .description {
+  color: var(--text-light-theme-color);
+}
+
+.why-are-we-list-item-count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--title-light-theme-color);
+}
+
+.why-are-we-list-item-desc {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--title-light-theme-color);
+}
+
+.symbol-plus {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  color: var(--accent-color);
+}
+
+/* OUT MASTERS */
+.masters .subtitle {
+  color: var(--text-light-theme-color);
+}
+
+.masters-list-item-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--title-light-theme-color);
+}
+
+.masters-list-item-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+}
+
+/* GALLERY */
+
+.gallery .subtitle {
+  color: var(--title-light-theme-color);
+}
+
+/* CONTACT */
+
+.contact-list-item-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--text-dark-theme-color);
+}
+
+.contact-time {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--text-dark-theme-color);
+}
+
+/* FOOTER */
+
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
