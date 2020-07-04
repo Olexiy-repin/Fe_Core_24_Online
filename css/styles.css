@@ -15,7 +15,6 @@ body {
   font-family: var(--main-font);
   font-size: 18px;
   color: var(--text-light-theme-color);
-  list-style: none;
 }
 
 .address {
