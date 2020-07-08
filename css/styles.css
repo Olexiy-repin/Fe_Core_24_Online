@@ -1,3 +1,15 @@
+/* raleway-700 - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Raleway Bold"), local("Raleway-Bold"),
+    url("../fonts/raleway-v16-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/raleway-v16-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 :root {
   --main-font: "Open Sans", sans-serif;
   --secondary-font: "Raleway", sans-serif;
@@ -8,6 +20,18 @@
   --text-dark-theme-color: #9da4bd;
   --text-light-theme-color: #555555;
   --accent-color: #ff6c00;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -91,7 +115,7 @@ body {
   font-size: 72px;
   line-height: 1.8;
   letter-spacing: 0.05em;
-  color: var(--title-dark-theme-color);
+  /* color: var(--title-dark-theme-color); */
 }
 
 .description {
