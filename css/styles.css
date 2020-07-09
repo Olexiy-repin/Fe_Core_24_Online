@@ -86,7 +86,7 @@ img {
 
 .header-utils {
   display: flex;
-  align-items: center
+  align-items: center;
 }
 
 .navigation {
@@ -230,6 +230,10 @@ img {
   margin-right: 64px;
 }
 
+.about-us-text-content {
+  max-width: 474px;
+}
+
 .about-us-title,
 .about-us-description {
   margin-bottom: 20px;
@@ -266,6 +270,10 @@ img {
 }
 
 /* SERVICES */
+.services {
+  background-color: #303030;
+}
+
 .services-list-item-name,
 .services-list-item-price {
   font-weight: 400;
@@ -276,6 +284,7 @@ img {
 }
 
 .services-title {
+  color: var(--title-dark-theme-color);
   margin-bottom: 44px;
 }
 
@@ -285,17 +294,23 @@ img {
 }
 
 .services-list {
-  flex-grow: 1;
+  flex-basis: 50%;
   padding-top: 30px;
   padding-right: 40px;
   padding-bottom: 30px;
   padding-left: 40px;
 }
 
+.services-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
 .services-modal-btn {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  color: var(--modal-btn-dark-theme-color);
 }
 
 /* WHY ARE WE */
@@ -317,10 +332,11 @@ img {
 }
 
 .why-are-we-list-item {
+  max-width: 170px;
   padding-top: 20px;
-  padding-right: 24px;
+  padding-right: 21px;
   padding-bottom: 20px;
-  padding-left: 24px;
+  padding-left: 21px;
   background-color: #f7f7f7;
 }
 
@@ -329,7 +345,7 @@ img {
 }
 
 .why-are-we-text-content {
-  width: 500px;
+  max-width: 500px;
 }
 
 .why-are-we .subtitle {
@@ -369,9 +385,22 @@ img {
   color: var(--accent-color);
 }
 
-/* OUT MASTERS */
+/* OUR MASTERS */
+.masters {
+  background-color: #f7f7f7;
+}
+
 .masters .subtitle {
   color: var(--text-light-theme-color);
+}
+
+.masters-title {
+  margin-bottom: 44px;
+}
+
+.masters-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .masters-list-item-name {
@@ -381,6 +410,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--title-light-theme-color);
+  margin-bottom: 8px;
 }
 
 .masters-list-item-position {
@@ -389,17 +419,81 @@ img {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 30px;
 
   color: var(--accent-color);
 }
 
+.masters-list-item-img {
+  margin-bottom: 30px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-list-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
 /* GALLERY */
+.gallery .subtitle {
+  margin-bottom: 44px;
+}
+
+.gallery-list {
+  display: flex;
+  justify-content: space-between;
+}
 
 .gallery .subtitle {
   color: var(--title-light-theme-color);
 }
 
 /* CONTACT */
+.contact-wrapper {
+  display: flex;
+}
+
+.contact-wrapper > section {
+  flex-basis: 50%;
+}
+
+.contact-form {
+  background-color: #191c26;
+}
+
+.contact {
+  padding-left: 100px;
+  background-color: #090b13;
+}
+
+.contact .subtitle {
+  color: var(--title-dark-theme-color);
+}
+
+.contact-title {
+  color: var(--title-dark-theme-color);
+  margin-bottom: 40px;
+}
+
+.contact-list {
+  margin-bottom: 70px;
+}
+
+.contact-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
 
 .contact-list-item-link {
   font-weight: 400;
@@ -418,6 +512,14 @@ img {
 }
 
 /* FOOTER */
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
 
 .copyright {
   font-weight: 600;
