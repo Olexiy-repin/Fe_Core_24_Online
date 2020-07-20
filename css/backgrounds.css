@@ -1,0 +1,101 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* BACKGROUND */
+.block {
+  width: 600px;
+  height: 400px;
+  padding: 20px;
+  margin: 0 auto;
+  /* border: 10px solid rgba(255, 0, 0, 0.5); */
+  /* background-color: black; */
+  /* background-clip: padding-box; */
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url("../images/backgrounds/forest.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-origin: content-box; */
+}
+/* /BACKGROUND */
+
+/* SKY WITH PLANET */
+
+/* .sky {
+  height: 800px;
+  background-image: url("../images/backgrounds/1/earth.png"),
+    url("../images/backgrounds/1/jupiter.png"),
+    url("../images/backgrounds/1/mars.png"),
+    url("../images/backgrounds/1/saturn.png"),
+    url("../images/backgrounds/1/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: left top, right top, left bottom, right bottom;
+  background-size: auto;
+} */
+
+/* /SKY WITH PLANET */
+
+/* SUN SYSTEM */
+/* .sky {
+  background-color: #000;
+}
+
+.sun-system {
+  position: relative;
+  height: 1000px;
+  width: 1000px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-image: url("../images/backgrounds/2/mercury.png"),
+    url("../images/backgrounds/2/venus.png"),
+    url("../images/backgrounds/2/earth.png"),
+    url("../images/backgrounds/2/mars.png"),
+    url("../images/backgrounds/2/jupiter.png"),
+    url("../images/backgrounds/2/saturn.png"),
+    url("../images/backgrounds/2/uran.png"),
+    url("../images/backgrounds/2/neptune.png"),
+    repeating-radial-gradient(
+      circle at center,
+      transparent,
+      transparent 5%,
+      transparent 5%,
+      transparent 7%,
+      #ccc 7%,
+      #ccc 8%
+    );
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left calc(50% - 55px) center,
+    left calc(50%) top calc(50% - 110px), left calc(50% - 166px) center,
+    left calc(50% + 180px) bottom calc(50% - 130px),
+    left calc(50%) top calc(50% - 280px), left calc(50% - 334px) center,
+    left calc(50%) top calc(50% - 400px),
+    left calc(50% - 423px) top calc(50% - 150px), center;
+}
+
+.sun-system::before {
+  display: block;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-image: linear-gradient(yellow, orange);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  box-shadow: 0 0 50px yellow;
+} */
+
+/* /SUN SYSTEM */
