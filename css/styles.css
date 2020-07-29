@@ -77,7 +77,14 @@ img {
 
 /* HEADER */
 .header {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  /* top: 0;
+  left: 50%;
+  transform: translateX(-50%); */
 }
+
 .header .container {
   display: flex;
   align-items: center;
@@ -96,6 +103,7 @@ img {
 
 .logo {
   margin-right: 71px;
+  animation-duration: 2000ms;
 }
 
 .navigation-list {
@@ -128,12 +136,28 @@ img {
 }
 
 .navigation-list-link {
+  position: relative;
   padding-top: 52px;
   padding-bottom: 52px;
+  color: #fff;
+  transition: color 250ms linear;
+}
+
+.navigation-list-link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent-color);
 }
 
 .header-tel-link {
   text-transform: uppercase;
+  color: #fff;
+  transition: color 250ms linear;
 }
 
 .modal-btn {
@@ -147,6 +171,8 @@ img {
   padding-bottom: 12px;
   padding-left: 20px;
   cursor: pointer;
+  color: var(--modal-btn-dark-theme-color);
+  transition: background-color 250ms linear, color 250ms linear;
 }
 
 .modal-btn:hover,
@@ -168,6 +194,7 @@ img {
   background-repeat: no-repeat;
   background-position: right;
   background-size: 1125px auto;
+  animation-duration: 2000ms;
 }
 
 .hero .container {
@@ -179,6 +206,19 @@ img {
   padding-left: 100px;
   padding-top: 272px;
   padding-bottom: 206px;
+}
+
+.social-links-wrapper {
+  position: relative;
+  width: 100px;
+}
+
+.hero .social-links {
+  position: absolute;
+  left: 27px;
+  bottom: 40px;
+  transform: rotate(-90deg);
+  transform-origin: left;
 }
 
 .social-links {
@@ -204,6 +244,7 @@ img {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: var(--text-light-theme-color);
+  transition: color 250ms linear;
 }
 
 .social-links-item-link:hover,
@@ -306,6 +347,10 @@ img {
   color: var(--modal-btn-light-theme-color);
 }
 
+.about-us .modal-btn:hover {
+  color: var(--modal-btn-dark-theme-color);
+}
+
 /* SERVICES */
 .services {
   background-color: #111319;
@@ -321,6 +366,14 @@ img {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--text-dark-theme-color);
+}
+
+.services-list-item-underline {
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .services-title {
@@ -369,6 +422,8 @@ img {
 .services-list-item {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  align-items: baseline;
 }
 
 .services-list-item:not(:last-child) {
@@ -430,12 +485,16 @@ img {
 }
 
 .why-are-we-list-item-count {
+  position: relative;
+  width: max-content;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.05em;
   color: var(--title-light-theme-color);
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 6px;
 }
 
@@ -448,6 +507,9 @@ img {
 }
 
 .symbol-plus {
+  position: absolute;
+  top: 7px;
+  right: -11px;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.38;
@@ -513,12 +575,20 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: #fff;
+  transition: background-color 250ms linear;
+}
+
+.social-list-item-link:hover,
+.social-list-item-link:focus {
+  background-color: #000;
 }
 
 .social-list-item-link-svg {
   width: 20px;
   height: 20px;
+  transition: fill 250ms linear;
 }
+
 .social-list-item-link:hover .social-list-item-link-svg,
 .social-list-item-link:focus .social-list-item-link-svg {
   fill: var(--accent-color);
