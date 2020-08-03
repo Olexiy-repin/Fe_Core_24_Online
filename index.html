@@ -1,276 +1,78 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Барбершоп</title>
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <!-- ШАПКА САЙТА -->
-    <header>
-        <nav>
-            <a href="./index.html" aria-label="Логотип">
-                <img src="./images/header/logo.svg" alt="Логотип">
-            </a>
-            <ul>
-                <li>
-                    <a href="">О нас</a>
-                </li>
-                <li>
-                    <a href="">Услуги и цены</a>
-                </li>
-                <li>
-                    <a href="">Мастера</a>
-                </li>
-                <li>
-                    <a href="">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-        <address>
-            <a href="tel:+380441111111">+38 044 111 11 11</a>
-        </address>
-        <button>онлайн-запись</button>
-    </header>
-    <main>
-        <!-- HERO секция -->
-        <section>
-            <div>
-                <ul>
-                    <li>
-                        <a href="" lang="en">Instagram</a>
-                    </li>
-                    <li>
-                        <a href="" lang="en">Youtube</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <p lang="en">A hair salon for men in Kyiv</p>
-                <h1 lang="en">BarberShop</h1>
-                <p>Мы эксперты в модных мужских стрижках. <br> Работаем быстро, осторожно и со вкусом.</p>
-            </div>
+    <form action="#" method="GET" class="contact-form">
+
+        <section class="contact-form-section">
+            <input type="text" class="contact-form-input" name="user-name" placeholder="Your name*" required
+                minlength="2">
+            <input type="email" class="contact-form-input" name="user-email" placeholder="Your email*" required>
+            <input type="tel" class="contact-form-input" name="user-phone" placeholder="096-111-11-11" required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+        </section>
+        <section class="contact-form-section">
+            <h2 class="contact-form-title">Age</h2>
+
+            <label>
+                18
+                <input type="radio" value="user-age-18" name="user-age" class="contact-form-radio" checked>
+            </label>
+
+            <label for="user-age-22">22</label>
+            <input type="radio" value="user-age-22" name="user-age" id="user-age-22" class="contact-form-radio">
+
+            <label for="user-age-30">30</label>
+            <input type="radio" value="user-age-30" name="user-age" id="user-age-30" class="contact-form-radio">
+        </section>
+        <section class="contact-form-section">
+            <h2 class="contact-form-title">Hobby</h2>
+
+            <label>
+                Boxing
+                <input type="checkbox" value="boxing" name="user-hobby" class="contact-form-radio">
+            </label>
+
+            <label for="user-hobby-swimming">Swimming</label>
+            <input type="checkbox" value="swimming" name="user-hobby" id="user-hobby-swimming"
+                class="contact-form-radio">
+
+            <label for="user-hobby-football">Football</label>
+            <input type="checkbox" value="football" name="user-hobby" id="user-hobby-football"
+                class="contact-form-radio">
         </section>
 
-        <!-- О НАС -->
-        <section>
-            <ul>
-                <li>
-                    <img src="./images/about-us/about-img-1.jpg" alt="Мастер бреет клиента" width="270" height="445">
-                </li>
-                <li>
-                    <img src="./images/about-us/about-img-2.jpg" alt="Мастер стрижет клиента" width="270" height="445">
-                </li>
-            </ul>
-            <div>
-                <p>о нас</p>
-                <h2>Лучший Барбершоп
-                    твоего города</h2>
-                <p>Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-                <p>Мы команда, которая никогда не останавливается на достигнутом
-                    и жаждет перемен. И когда ты попадешь в руки нашего мастера,
-                    то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне".
-                    Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-                <button>онлайн-запись</button>
-            </div>
+        <section class="contact-form-section">
+            <h2 class="contact-form-title">Your city</h2>
+
+            <select name="user-city" id="">
+                <option value="Kyiv">Kyiv</option>
+                <option value="Kharkov">Kharkov</option>
+                <option value="Vinnitsa">Vinnitsa</option>
+            </select>
         </section>
 
-        <!-- УСЛУГИ И ЦЕНЫ -->
-        <section>
-            <p>Проведи время в компании лучших мастеров</p>
-            <h2>Услуги и цены</h2>
-            <div>
-                <ul>
-                    <li>
-                        <span>Мужская стрижка</span>
-                        <span>от 300 грн.</span>
-                    </li>
-                    <li>
-                        <span>Стрижка бороды</span>
-                        <span>от 200 грн.</span>
-                    </li>
-                    <li>
-                        <span>Стрижка усов</span>
-                        <span>от 200 грн.</span>
-                    </li>
-                    <li>
-                        <span>Бритье опасной бритвой</span>
-                        <span>от 200 грн.</span>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <span>Cтрижка у стажера</span>
-                        <span>от 50 грн.</span>
-                    </li>
-                    <li>
-                        <span>Стрижка под насадку</span>
-                        <span>от 200 грн.</span>
-                    </li>
-                    <li>
-                        <span>Детская стрижка (до 12 лет)</span>
-                        <span>от 300 грн.</span>
-                    </li>
-                    <li>
-                        <span>Камуфлирование седины</span>
-                        <span>от 200 грн.</span>
-                    </li>
-                </ul>
-            </div>
-            <button>онлайн-запись</button>
+        <section class="contact-form-section">
+            <h2 class="contact-form-title">Your message</h2>
+
+            <textarea class="contact-form-message" name="user-message" placeholder="Your message" minlength="10"
+                maxlength="60" required></textarea>
         </section>
 
-        <!-- ПОЧЕМУ МЫ -->
-        <section>
-            <div>
-                <ul>
-                    <li>
-                        <p>600 <sup>+</sup></p>
-                        <p>Довольных клиентов в день</p>
-                    </li>
-                    <li>
-                        <p>20 <sup>+</sup></p>
-                        <p>Лучших мастеров Киева </p>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <p>50 <sup>+</sup></p>
-                        <p>Наград за отличный сервис </p>
-                    </li>
-                    <li>
-                        <p>100 <sup>+</sup></p>
-                        <p>Подарков постоянным клиентам</p>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <p>старая традиционная школа</p>
-                <h2>Почему приходят именно к нам?</h2>
-                <p>О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать. </p>
-            </div>
-        </section>
 
-        <!-- НАШИ МАСТЕРА -->
-        <section>
-            <p>для настоящих ценителей атмосферы</p>
-            <h2>Наши мастера</h2>
-            <ul>
-                <li>
-                    <img src="./images/team/teamate-1.jpg" alt="мастер барбершопа" width="370" height="346">
-                    <h3 lang="en">John Smith</h3>
-                    <p lang="en">Extreme Barber</p>
-                    <ul>
-                        <li>
-                            <a href="" aria-label="иконка инстаграма"></a>
-                        </li>
-                        <li>
-                            <a href="" aria-label="иконка твиттера"></a>
-                        </li>
-                        <li>
-                            <a href="" aria-label="иконка фейсбука"></a>
-                        </li>
-                        <li>
-                            <a href="" aria-label="иконка ликедина"></a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <img src="./images/team/teamate-2.jpg" alt="мастер барбершопа" width="370" height="346">
-                    <h3 lang="en">Michele Doe</h3>
-                    <p lang="en">Extreme Barber</p>
-                    <ul>
-                        <li>
-                            <a href="" aria-label="иконка инстаграма"></a>
-                        </li>
-                        <li>
-                            <a href="" aria-label="иконка твиттера"></a>
-                        </li>
-                        <li>
-                            <a href="" aria-label="иконка фейсбука"></a>
-                        </li>
-                        <li>
-                            <a href="" aria-label="иконка ликедина"></a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <img src="./images/team/teamate-3.jpg" alt="мастер барбершопа" width="370" height="346">
-                    <h3 lang="en">Alan Black</h3>
-                    <p lang="en">Extreme Barber</p>
-                    <ul>
-                        <li>
-                            <a href="" aria-label="иконка инстаграма"></a>
-                        </li>
-                        <li>
-                            <a href="" aria-label="иконка твиттера"></a>
-                        </li>
-                        <li>
-                            <a href="" aria-label="иконка фейсбука"></a>
-                        </li>
-                        <li>
-                            <a href="" aria-label="иконка ликедина"></a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+        <div class="contact-form-btn-wrapper">
+            <button type="submit" class="contact-form-btn submit">submit</button>
+            <button type="reset" class="contact-form-btn reset">reset</button>
+        </div>
 
-        <!-- ГАЛЕРЕЯ -->
-        <section>
-            <p>На латинском языке “барба” означает “борода”</p>
-            <h2 hidden>Галерея работ</h2>
-            <ul>
-                <li>
-                    <img src="./images/gallery/gallery-item-1.jpg" alt="мастер стрижет клиента" width="270"
-                        height="360">
-                </li>
-                <li>
-                    <img src="./images/gallery/gallery-item-2.jpg" alt="мастер бреет клиента" width="270" height="360">
-                </li>
-                <li>
-                    <img src="./images/gallery/gallery-item-3.jpg" alt="мастер пропаривает лицо клиента" width="270"
-                        height="360">
-                </li>
-                <li>
-                    <img src="./images/gallery/gallery-item-4.jpg" alt="мастер стрижет клиента" width="270"
-                        height="360">
-                </li>
-            </ul>
-        </section>
-
-        <!-- КОНТАКТЫ -->
-        <section>
-            <h2>Контакты</h2>
-            <ul>
-                <li>
-                    <address><a href="https://goo.gl/maps/Aek9VfqJxaWBVfHE9" target="_blank">ул. Васильковая, 7А
-                            Киев, 08132</a></address>
-                </li>
-                <li>
-                    <address><a href="tel:+380441111111">+38 044 111 11 11</a></address>
-                </li>
-                <li>
-                    <address><a href="mailto:barbershop@email.com">barbershop@email.com</a></address>
-                </li>
-            </ul>
-            <p>время работы</p>
-            <p>Ежедневно с 9:00 до 22:00</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; Copyright 2020</p>
-        <ul>
-            <li>
-                <a href="" lang="en">Instagram</a>
-            </li>
-            <li>
-                <a href="" lang="en">Youtube</a>
-            </li>
-        </ul>
-    </footer>
+    </form>
 </body>
 
 </html>
