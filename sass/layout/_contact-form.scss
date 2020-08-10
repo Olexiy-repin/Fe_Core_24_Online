@@ -1,0 +1,92 @@
+/* CONTACT FORM */
+.contact-wrapper {
+  display: flex;
+}
+
+.contact-wrapper > section {
+  flex-basis: 50%;
+}
+
+.contact-form-section {
+  background-color: #191c26;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+  /* background-color: #191c26; */
+}
+
+.contact-form-section-wrapper {
+  width: 560px;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-form-field {
+  position: relative;
+  margin-bottom: 44px;
+}
+
+.contact-form-input,
+.contact-form-message {
+  font-family: $main-font;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  color: #fff;
+}
+
+.contact-form-message::placeholder {
+  text-transform: uppercase;
+}
+
+.contact-form-input:focus,
+.contact-form-message:focus {
+  outline: none;
+  border-bottom-color: #fff;
+}
+
+.contact-form-message:focus::placeholder {
+  color: #fff;
+}
+
+.contact-form-input:not(:placeholder-shown),
+.contact-form-message:not(:placeholder-shown) {
+  border-bottom-color: #fff;
+}
+
+.contact-form-input {
+  width: 260px;
+  height: 24px;
+}
+
+.contact-form-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: $main-font;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: transform 250ms linear;
+}
+
+.contact-form-input:focus + .contact-form-label,
+.contact-form-input:not(:placeholder-shown) + .contact-form-label {
+  transform: translateY(-30px);
+  color: #fff;
+}
+
+.contact-form-message {
+  width: 100%;
+  height: 76px;
+  resize: none;
+  margin-bottom: 44px;
+}

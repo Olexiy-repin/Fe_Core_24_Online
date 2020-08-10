@@ -1,0 +1,77 @@
+/* OUR MASTERS */
+.masters {
+  background-color: #f7f7f7;
+}
+
+.masters .subtitle {
+  color: $text-light-theme-color;
+}
+
+.masters-title {
+  margin-bottom: 44px;
+}
+
+.masters-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.masters-list-item-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: $title-light-theme-color;
+  margin-bottom: 8px;
+}
+
+.masters-list-item-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 30px;
+
+  color: $accent-color;
+}
+
+.masters-list-item-img {
+  margin-bottom: 30px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-list-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: background-color 250ms linear;
+}
+
+.social-list-item-link:hover,
+.social-list-item-link:focus {
+  background-color: #000;
+}
+
+.social-list-item-link-svg {
+  width: 20px;
+  height: 20px;
+  transition: fill 250ms linear;
+}
+
+.social-list-item-link:hover .social-list-item-link-svg,
+.social-list-item-link:focus .social-list-item-link-svg {
+  fill: $accent-color;
+}

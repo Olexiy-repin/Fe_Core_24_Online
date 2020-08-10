@@ -1,0 +1,23 @@
+@import "./utils/normalize";
+@import "./base/fonts";
+@import "./utils/variables";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+@import "./base/base";
+@import "./components/container";
+@import "./components/section";
+@import "./components/modal";
+@import "./components/subtitle";
+@import "./components/description";
+@import "./components/modal-btn";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/about";
+@import "./layout/services";
+@import "./layout/why-are-we";
+@import "./layout/masters";
+@import "./layout/gallery";
+@import "./layout/contact-form";
+@import "./layout/contact";
+@import "./layout/footer";
