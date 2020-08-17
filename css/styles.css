@@ -1,0 +1,155 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* body {
+  background-color: teal;
+} */
+
+/* ========== MIN-WIDTH MAX-WIDTH ========== */
+/*  когда ширина вьюпорта будет 500px или больше, применить какие-то свойства */
+/* @media (min-width: 500px) {
+  body {
+    background-color: tomato;
+  }
+} */
+
+/*  когда ширина вьюпорта будет 768 или больше, применить какие-то свойства */
+/* @media (min-width: 768px) {
+  body {
+    background-color: seagreen;
+  }
+} */
+
+/* когда вьюпорт от 0 до 767px применять правила которые прописаны внутри */
+/* @media (max-width: 767px) {
+  body {
+    background-color: seagreen;
+  }
+} */
+
+/* когда вьюпорт от 0 до 400px применять правила которые прописаны внутри */
+/* @media (max-width: 400px) {
+  body {
+    background-color: saddlebrown;
+  }
+} */
+
+/* ========== AND ========== */
+/* когда ширина вьюпорта будет на отрезке от 500px до 767px, применить правила те что внутри */
+/* @media (min-width: 500px) and (max-width: 767px) {
+  body {
+    background-color: slateblue;
+  }
+} */
+/* ========== OR ========== */
+/* @media (max-width: 767px), (min-width: 1024px) {
+  body {
+    background-color: tan;
+  }
+} */
+/* ========== TYPES ========== */
+/* 
+all
+screen
+print
+*/
+/* @media screen and (min-width: 768px) {
+  body {
+    background-color: red;
+  }
+} */
+/* ========== ORIENTATION ========== */
+/* @media (orientation: landscape) {
+  body {
+    background-color: tomato;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 425px) {
+  body {
+    background-color: darkkhaki;
+  }
+} */
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.list-item {
+  outline: 1px solid #000;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.list-item-img {
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
+
+.list-item-name {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .list-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 680px;
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1259px) {
+  /* 
+    -0 + 2 = 2;
+    -1 + 2 = 1;
+    -2 + 2 = 0;
+    -3 + 2 = -1;
+  */
+  .list-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .container {
+    width: 1260px;
+  }
+}
