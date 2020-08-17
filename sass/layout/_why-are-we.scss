@@ -1,8 +1,4 @@
 /* WHY ARE WE */
-.why-are-we .container {
-  display: flex;
-}
-
 .why-are-we-list-wrapper {
   display: flex;
   margin-right: 130px;
@@ -31,18 +27,6 @@
 
 .why-are-we-text-content {
   max-width: 500px;
-}
-
-.why-are-we .subtitle {
-  color: $text-light-theme-color;
-}
-
-.why-are-we-title {
-  margin-bottom: 20px;
-}
-
-.why-are-we .description {
-  color: $text-light-theme-color;
 }
 
 .why-are-we-list-item-count {

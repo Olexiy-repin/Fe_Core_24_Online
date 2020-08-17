@@ -4,12 +4,7 @@
 @import "./utils/placeholders";
 @import "./utils/mixins";
 @import "./base/base";
-@import "./components/container";
-@import "./components/section";
-@import "./components/modal";
-@import "./components/subtitle";
-@import "./components/description";
-@import "./components/modal-btn";
+@import "./components/index";
 
 @import "./layout/header";
 @import "./layout/hero";

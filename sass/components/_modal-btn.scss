@@ -13,12 +13,25 @@
   padding-bottom: 12px;
   padding-left: 20px;
   cursor: pointer;
-  color: $modal-btn-dark-theme-color;
   transition: background-color 250ms linear, color 250ms linear;
 
   &:hover,
   &:focus {
     background-color: $accent-color;
     color: #ffffff;
+  }
+
+  &-light-theme {
+    color: $modal-btn-light-theme-color;
+  }
+
+  &-dark-theme {
+    color: $modal-btn-dark-theme-color;
+  }
+
+  .services & {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

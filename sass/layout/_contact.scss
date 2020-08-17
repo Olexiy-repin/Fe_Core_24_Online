@@ -7,21 +7,11 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
-  /* background-color: #090b13; */
 }
 
 .contact .address {
   display: flex;
   align-items: center;
-}
-
-.contact .subtitle {
-  color: $title-dark-theme-color;
-}
-
-.contact-title {
-  color: $title-dark-theme-color;
-  margin-bottom: 40px;
 }
 
 .contact-list {
