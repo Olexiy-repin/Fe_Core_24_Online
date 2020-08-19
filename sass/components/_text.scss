@@ -1,0 +1,22 @@
+.text {
+  font-weight: normal;
+  font-size: $text-font-size;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+
+  .hero-right-side & {
+    max-width: 400px;
+  }
+
+  .about-right-side & {
+    margin-bottom: 20px;
+  }
+}
+
+.text-dark-theme {
+  color: $text-color-dark-theme;
+}
+
+.text-light-theme {
+  color: $text-color-light-theme;
+}

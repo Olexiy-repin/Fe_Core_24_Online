@@ -1,0 +1,31 @@
+.contact-section {
+  width: 48.828%;
+  background-image: url("../images/contact/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 100px;
+}
+
+.contact-list {
+  margin-bottom: 70px;
+}
+
+.contact-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contact-list-link,
+.contact-date {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.contact-list-link-svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+  margin-top: 6px;
+}
